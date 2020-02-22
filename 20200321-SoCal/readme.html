@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>readme</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="socal-road-trip" class="md-header-anchor"></a><span>SoCal Road Trip</span></h1><p><span>week long road trip during spring break to explore the urban &amp; nature of southern california.</span></p><p><span>event will take place march 22 2020, saturday or march 23 2020, sunday</span></p><h2><a name="day-1" class="md-header-anchor"></a><span>Day 1</span></h2><p><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/McWay_Falls_Big_Sur_May_2011_002.jpg/800px-McWay_Falls_Big_Sur_May_2011_002.jpg' alt='mcway' referrerPolicy='no-referrer' /></p><p><span>head down to SLO via HWY1:</span></p><h4><a name="possible-interest-points:" class="md-header-anchor"></a><span>possible interest points:</span></h4><ol start='' ><li><a href='https://www.google.com/maps/place/Bixby+Creek+Bridge/@36.3745157,-121.9105469,15.08z/data=!4m12!1m6!3m5!1s0x808d94a0a7c313c9:0x89526bd7a2901627!2sBixby+Creek+Bridge!8m2!3d36.3714903!4d-121.9017595!3m4!1s0x808d94a0a7c313c9:0x89526bd7a2901627!8m2!3d36.3714903!4d-121.9017595'><span>Bixby Creek Bridge</span></a></li><li><a href='https://www.google.com/maps/place/Point+Sur+Lighthouse,+Monterey,+CA+93940/@36.4452549,-121.8198061,9.75z/data=!4m5!3m4!1s0x808d9154d4894371:0x4141b8589a0a31f9!8m2!3d36.3064105!4d-121.901722'><span>Point Sur Lighthouse</span></a></li><li><a href='https://www.google.com/maps/place/Pfeiffer+Beach/@36.2562627,-121.8328602,14.5z/data=!4m5!3m4!1s0x808d9ab663e31479:0x737c82fda906d4f9!8m2!3d36.2380429!4d-121.8162346'><span>Pfeiffer Beach</span></a></li><li><a href='https://www.google.com/maps/place/McWay+Cove/@36.2019778,-121.7014564,13z/data=!4m5!3m4!1s0x0:0xd6f9f61f65ded802!8m2!3d36.1582859!4d-121.6728973'><span>McWay Cove/ McWay Fall</span></a></li><li><a href='https://www.google.com/maps/place/Elephant+Seal+Vista+Point/@35.9975163,-121.3453101,10z/data=!4m5!3m4!1s0x8092ca9b580dc385:0x56b9da1aa6ed2816!8m2!3d35.6629449!4d-121.2577343'><span>Elephant Seal Vista Point</span></a></li><li><a href='https://www.google.com/maps/place/Hearst+Castle/@35.6852076,-121.1682251,15z/data=!4m2!3m1!1s0x0:0xc07bc62555ca2e20?sa=X&amp;ved=2ahUKEwiA7LK-uuHnAhUXlnIEHWvACTIQ_BIwHXoECBoQCA'><span>Hearst Castle</span></a></li></ol><p><span>Arrive in SLO</span></p><p><span>Night - SLO</span></p><h2><a name="day-2" class="md-header-anchor"></a><span>Day 2</span></h2><p><img src='https://www.uponarriving.com/wp-content/uploads/2019/04/Carrizo-Plain-National-Monument-1024x819-820x410.jpg' alt='carrizo' referrerPolicy='no-referrer' /></p><p><span>visit surrouding area of SLO, possible ATV / SKYDIVING</span></p><p><span>Night - SLO</span></p><h2><a name="day-3" class="md-header-anchor"></a><span>Day 3</span></h2><p><img src='https://www.tripsavvy.com/thmb/cvUCndl_pVUn0tuRultzjMhQ1oE=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AerialviewofaDowntownLAatsunset-5be5c055d87443998249f40da7e76479.jpg' alt='dtla' referrerPolicy='no-referrer' /></p><p><span>continue to head down south, via HWY 101 to santa barbara &amp; check out </span><a href='https://www.google.com/maps/place/Santa+Barbara+Fish+Market/@34.7097718,-119.4336281,8z/data=!4m5!3m4!1s0x80e913f5ba6d1a5d:0x56406a71c17b08cb!8m2!3d34.4035105!4d-119.6936417'><span>Santa Barbara Fish Market</span></a></p><p><span>after lunch continue into LA, and spend a day here for food and sceneries. </span></p><p><span>Night - Los Angeles</span></p><h2><a name="day-4" class="md-header-anchor"></a><span>Day 4 </span></h2><p><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Salvation_Mountain_001.jpg/1200px-Salvation_Mountain_001.jpg' alt='salvation moutain' referrerPolicy='no-referrer' /></p><p><span>drive down from la to </span><a href='https://www.google.com/maps/place/Salton+Sea/@33.5582702,-116.2618237,9.38z/data=!4m22!1m16!4m15!1m6!1m2!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2sLos+Angeles,+California!2m2!1d-118.2436849!2d34.0522342!1m6!1m2!1s0x80d0b2024782ca49:0x1056c9c09a0b7877!2sEast+Jesus,+E+Jesus+Rd,+Niland,+CA+92257!2m2!1d-115.4660136!2d33.2630495!3e0!3m4!1s0x80da0e34f245497f:0xba9798cef0c05781!8m2!3d33.3286185!4d-115.8434122'><span>Salton Sea</span></a><span> area, check out </span><a href='https://www.google.com/maps/place/Salton+City,+CA/@33.2977332,-115.9939955,13z/data=!3m1!4b1!4m22!1m16!4m15!1m6!1m2!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2sLos+Angeles,+California!2m2!1d-118.2436849!2d34.0522342!1m6!1m2!1s0x80d0b2024782ca49:0x1056c9c09a0b7877!2sEast+Jesus,+E+Jesus+Rd,+Niland,+CA+92257!2m2!1d-115.4660136!2d33.2630495!3e0!3m4!1s0x80da15c8c07263cd:0x325293c27ef97271!8m2!3d33.2986819!4d-115.9562302'><span>Salton City</span></a><span>, </span><a href='https://www.google.com/maps/place/East+Jesus/@33.2721439,-115.5140823,12z/data=!4m22!1m16!4m15!1m6!1m2!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2sLos+Angeles,+California!2m2!1d-118.2436849!2d34.0522342!1m6!1m2!1s0x80d0b2024782ca49:0x1056c9c09a0b7877!2sEast+Jesus,+E+Jesus+Rd,+Niland,+CA+92257!2m2!1d-115.4660136!2d33.2630495!3e0!3m4!1s0x80d0b2024782ca49:0x1056c9c09a0b7877!8m2!3d33.2630563!4d-115.4660082'><span>East Jesus</span></a><span>, </span><a href='https://www.google.com/maps/place/Salvation+Mountain/@33.2721439,-115.5140823,12z/data=!4m22!1m16!4m15!1m6!1m2!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2sLos+Angeles,+California!2m2!1d-118.2436849!2d34.0522342!1m6!1m2!1s0x80d0b2024782ca49:0x1056c9c09a0b7877!2sEast+Jesus,+E+Jesus+Rd,+Niland,+CA+92257!2m2!1d-115.4660136!2d33.2630495!3e0!3m4!1s0x80d0b207f1dda1d3:0x4ec3972c15caffda!8m2!3d33.2541386!4d-115.4726386'><span>Salvation Mountain</span></a><span>. </span>
+<span>in the afternoon, we can head up to </span><a href='https://www.google.com/maps/place/Joshua+Tree+National+Park/@33.9002347,-116.1408641,10z/data=!3m1!4b1!4m5!3m4!1s0x80da8f85b965a87b:0x1977eda73aeb9de2!8m2!3d33.873415!4d-115.9009923'><span>Joshua Tree Naional Park</span></a><span> for the afternoon and head to [Palm Springs] for the night.</span></p><p><span>Night - Palm Springs</span></p><h2><a name="day-5" class="md-header-anchor"></a><span>Day 5 </span></h2><p><img src='https://media.nbclosangeles.com/2019/09/GettyImages-1042755830.jpg?resize=850%2C478' alt='joshua tree' referrerPolicy='no-referrer' /></p><p><span>head up nice and early after breakfast, explore Joshua Tree some more, then head over to </span><a href='https://www.google.com/maps/place/Mojave+National+Preserve/@34.672618,-117.0142883,7.5z/data=!4m12!1m6!3m5!1s0x80da8f85b965a87b:0x1977eda73aeb9de2!2sJoshua+Tree+National+Park!8m2!3d33.873415!4d-115.9009923!3m4!1s0x80cf8207c4d4a6d1:0x1a6d6ddf9ae18a7a!8m2!3d35.1558457!4d-115.4470825'><span>Mojave National Preserve</span></a><span> in the afternoon, check out some spots and get settled down in nearby </span><a href='https://www.google.com/travel/hotels/Death%20Valley/entity/ChgI8_fo_JikrtBGGgwvZy8xaGMyajRoOXAQAQ/prices?g2lb=2502548%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4291318%2C4305595%2C4306835%2C4308216%2C4308226%2C4314846%2C4317915%2C4326765%2C4328159%2C4329288%2C4330113%2C4347918%2C4270859%2C4284970%2C4291517%2C4307996&amp;hl=en&amp;gl=us&amp;un=1&amp;ap=SAEqKAoSCVgAhGODA0FAEcAWt-iEhV3AEhIJnCfPCq7bQkARwBa36PQGXcAwAlqRAgoFCMUCEAAiA1VTRCoWCgcI5A8QAxgbEgcI5A8QAxgcGAEgAbABAFgBaAGKASgKEgnnfljeUUZBQBHAFrfoKHhdwBISCXtEZ3ltG0NAEcAWt-iY-VzAmgEOEgxEZWF0aCBWYWxsZXmiARgKCC9tLzBjbWxzEgxEZWF0aCBWYWxsZXmqAQ8KAggSEgMImwESAghsGAGqARoKAggUEgIIHRICCBsSAggwEgIIUhICCE4YAaoBCgoCCBwSAghzGAGqAQoKAggREgIIOBgBqgEKCgIILhICCFMYAaoBBgoCCCwYAKoBCwoDCOECEgIIYxgBqgEaCgIINRICCB4SAggTEgIIMhICCF0SAggQGAGSAQIgAQ&amp;q=hotel%20near%20death%20valley&amp;rp=EJjg_e-5jrO5yAEQh5z5s4zk1uHZARD1y9D62f78xbUBEMP51tuj5OuBLzgBQABIAg&amp;ictx=1&amp;hrf=CgUIxQIQACIDVVNEKhYKBwjkDxADGBsSBwjkDxADGBwYASABsAEAWAFoAYoBKAoSCVgAhGODA0FAEcAWt-iEhV3AEhIJnCfPCq7bQkARwBa36PQGXcCaAQ4SDERlYXRoIFZhbGxleaIBGAoIL20vMGNtbHMSDERlYXRoIFZhbGxleaoBDwoCCBISAwibARICCGwYAaoBGgoCCBQSAggdEgIIGxICCDASAghSEgIIThgBqgEKCgIIHBICCHMYAaoBCgoCCBESAgg4GAGqAQoKAgguEgIIUxgBqgEGCgIILBgAqgELCgMI4QISAghjGAGqARoKAgg1EgIIHhICCBMSAggyEgIIXRICCBAYAZIBAiAB'><span>hotel</span></a><span>.</span></p><p><span>Night - Hampton Inn &amp; Suites Ridgecrest or similar.</span></p><h2><a name="day-6" class="md-header-anchor"></a><span>Day 6</span></h2><p><img src='https://www.nationalparks.org/sites/default/files/death-valley-istock-2.jpg' alt='death valley' referrerPolicy='no-referrer' /></p><p><span>again, up early, breakfast then head out to </span><a href='https://www.google.com/maps/place/Death+Valley+National+Park/@35.8034061,-117.268211,8z/data=!4m12!1m6!3m5!1s0x80da8f85b965a87b:0x1977eda73aeb9de2!2sJoshua+Tree+National+Park!8m2!3d33.873415!4d-115.9009923!3m4!1s0x80c74b7776ae8a47:0xccc9f07c7bf2b054!8m2!3d36.5052209!4d-117.0785522'><span>Death Valley National Park</span></a><span>, plenty of spots to check out in Death Valley, it will be a good day in the valley.</span></p><p><span>Night - Drive Back or stay in surrounding area</span></p><h2><a name="day-7-(optional-if-drove-back-on-day-6)" class="md-header-anchor"></a><span>Day 7 (optional if drove back on day 6)</span></h2><p><img src='https://live.staticflickr.com/1745/28970056728_f56f3ed07b_b.jpg' alt='mono lake' referrerPolicy='no-referrer' /></p><p><span>drive up via the east side of </span><a href='https://www.google.com/maps/place/Mt.+Whitney/@36.6809524,-118.7426772,8.75z/data=!4m5!3m4!1s0x80bf8d3667a6b6c5:0x77dad12cf276cbf2!8m2!3d36.5784991!4d-118.29226!5m1!1e4'><span>Mt.Whitney</span></a><span>, pass through </span><a href='https://www.google.com/maps/place/Mono+Lake/@38.0069565,-119.1714219,11z/data=!4m5!3m4!1s0x809648435f30b0bd:0x121a56f42738210c!8m2!3d38.0128316!4d-118.9761519'><span>Mono Lake</span></a><span>- south lake tahoe - sacramento - back to san francisco</span></p><p>&nbsp;</p></div>
+</body>
+</html>
